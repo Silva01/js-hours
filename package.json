@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node node_modules/karma/bin/karma start ./test/karma.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/Silva01/js-hours/issues"
   },
-  "homepage": "https://github.com/Silva01/js-hours#readme"
+  "homepage": "https://github.com/Silva01/js-hours#readme",
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-typescript-preprocessor": "^0.3.1"
+  }
 }
