@@ -64,27 +64,15 @@ class Horas {
     }
 
     public getMilissegundos() : number {
-        let minutos = this.hora + this.minutos;
-        let minutosSeg = (minutos * 60) + this.segundos;
-
-        return minutosSeg * 1000;
+        return this.getSegundos() * 1000;
     }
 
     public getMicrossegundos() : number {
-        let minutos = this.hora + this.minutos;
-        let minutosSeg = (minutos * 60) + this.segundos;
-        let milissegundos = minutosSeg * 1000;
-
-        return milissegundos * 1000;
+        return this.getMilissegundos() * 1000;
     }
 
     public getNanossegundos() : number {
-        let minutos = this.hora + this.minutos;
-        let minutosSeg = (minutos * 60) + this.segundos;
-        let milissegundos = minutosSeg * 1000;
-        let microssegundos = milissegundos * 1000;
-
-        return microssegundos * 1000;
+        return this.getMicrossegundos() * 1000;
     }
 
 
