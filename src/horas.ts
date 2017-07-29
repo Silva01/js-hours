@@ -18,9 +18,9 @@ class Horas {
 
     public setHorasCompleta(pHora : string) : void {
         let pHoraTmp = pHora.split(":");
-        this.hora = parseInt(pHoraTmp[0]) * 60;
-        this.minutos = parseInt(pHoraTmp[1]);
-        this.segundos = parseInt(pHoraTmp[2]);
+        this.setHora(parseInt(pHoraTmp[0]));
+        this.setMinutos(parseInt(pHoraTmp[1]));
+        this.setSegundos(parseInt(pHoraTmp[2]));
     }
 
     public setHora(pHora : number) : void {
@@ -28,12 +28,12 @@ class Horas {
     }
 
     public setMinutos(pMinutos : number) : void {
-        this.minutos = pMinutos;
+        this.minutos += pMinutos;
     }
 
     public setSegundos(pSegundos : number) : void {
         if (pSegundos > 59) {
-            this.minutos = this.minutos + parseInt(pSegundos / 60);
+            this.minutos += parseInt(pSegundos / 60);
             this.segundos = pSegundos - (parseInt(pSegundos / 60) * 60);
         } else {
             this.segundos = pSegundos;
@@ -74,6 +74,5 @@ class Horas {
     public getNanossegundos() : number {
         return this.getMicrossegundos() * 1000;
     }
-
 
 }
