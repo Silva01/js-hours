@@ -28,7 +28,7 @@ class Horas {
     }
 
     public setMinutos(pMinutos : number) : void {
-        this.minutos += pMinutos;
+        this.minutos = pMinutos;
     }
 
     public setSegundos(pSegundos : number) : void {
