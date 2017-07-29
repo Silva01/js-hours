@@ -11,6 +11,7 @@ describe("Testando Objeto de Horas", () => {
        let hora = new Horas();
        hora.setHorasCompleta("01:00:00");
        expect( hora ).toBeDefined();
+       expect ( hora.getHoras() ).toBe("01:00:00");
     });
 
     it("Deverá criar uma estancia passando por valor 1, 60, 5, 10", () => {

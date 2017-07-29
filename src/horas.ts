@@ -18,7 +18,7 @@ class Horas {
 
     public setHorasCompleta(pHora : string) : void {
         let pHoraTmp = pHora.split(":");
-        this.hora = parseInt(pHoraTmp[0]);
+        this.hora = parseInt(pHoraTmp[0]) * 60;
         this.minutos = parseInt(pHoraTmp[1]);
         this.segundos = parseInt(pHoraTmp[2]);
     }
