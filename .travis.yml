@@ -1,0 +1,9 @@
+language: node_js
+before_install:
+ - "npm install -g typescript"
+ - "npm install -g typings"
+ - "npm install -g gulp"
+
+install:
+ - "npm install"
+ - "gulp test"
