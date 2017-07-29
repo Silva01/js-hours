@@ -10,6 +10,7 @@
   },
 
   "files": [
-    "src/soma.ts"
+    "src/hora.ts",
+    "src/constantes.ts"
   ]
 }

@@ -40,3 +40,12 @@ describe('Teste de métodos auxiliares', () => {
     });
 
 });
+
+describe('Validar Range de Horas', () => {
+
+    it('Deverá converter 01:00 em 60 minutos', () => {
+        let hora = new Hora();
+        expect(hora.converterHoraParaMinutos("01:00")).toBe(60);
+    });
+
+});

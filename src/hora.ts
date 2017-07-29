@@ -35,6 +35,13 @@ class Hora {
 
     }
 
+    public converterHoraParaMinutos(pHora : string) : number {
+        let hora = pHora.split(":")[0];
+        let minutos = pHora.split(":")[1];
+
+        return (parseInt(hora) * 60) + parseInt(minutos);
+    }
+
     private adicionarZerosAEsquerda(valor : number) : string {
         let tamanho = String(valor).length;
         return String(tamanho).length == 1 ? "0" + String(valor) : String(valor);
