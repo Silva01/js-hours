@@ -1,9 +1,9 @@
+
 /**
  * Created by DanielSilva on 29/07/17.
  */
 
-///<reference path="../../typings/index.d.ts"/>
-///<reference path="../../src/horasUtil.ts"/>
+import {HorasUtil} from "../../src/horasUtil";
 
 describe("Classe para utilidades de horas", () => {
     it('Deverá adicionar zeros a esquerda, maximo de 2 digitos', () => {

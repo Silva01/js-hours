@@ -6,11 +6,15 @@
     "removeComments": false,
     "preserveConstEnums": true,
     "sourceMap": false,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "types" : [
+      "jasmine"
+    ]
   },
 
   "files": [
-    "src/hora.ts",
-    "src/constantes.ts"
+    "src/horas.ts",
+    "src/horasCalc.ts",
+    "src/horasUtil.ts"
   ]
 }

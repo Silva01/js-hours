@@ -2,9 +2,8 @@
  * Created by DanielSilva on 29/07/17.
  */
 
-///<reference path="../../typings/index.d.ts"/>
-///<reference path="../../src/horasCalc.ts"/>
-///<reference path="../../src/horas.ts"/>
+import {HorasCalc} from "../../src/horasCalc";
+import {Horas} from "../../src/horas";
 
 describe("Testes Unitários da classe HorasCalc", () => {
 

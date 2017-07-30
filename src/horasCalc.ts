@@ -2,9 +2,9 @@
  * Created by DanielSilva on 29/07/17.
  */
 
-///<reference path="horas.ts"/>
+import {Horas} from "./horas";
 
-class HorasCalc {
+export class HorasCalc {
 
     constructor(){}
 

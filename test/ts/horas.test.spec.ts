@@ -1,9 +1,9 @@
+
 /**
  * Created by DanielSilva on 29/07/17.
  */
 
-///<reference path="../../typings/index.d.ts"/>
-///<reference path="../../src/horas.ts"/>
+import { Horas } from "../../src/horas";
 
 describe("Testando Objeto de Horas", () => {
 

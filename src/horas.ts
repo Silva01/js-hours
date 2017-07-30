@@ -2,9 +2,9 @@
  * Created by DanielSilva on 29/07/17.
  */
 
-///<reference path="horasUtil.ts"/>
+import { HorasUtil } from './horasUtil';
 
-class Horas {
+export class Horas {
 
     private hora : number;
     private minutos : number;

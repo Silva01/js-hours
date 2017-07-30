@@ -1,7 +1,7 @@
 module.exports = function(config) {
     config.set({
         basePath: '',
-        frameworks: ['jasmine'],
+        frameworks: ['jasmine', 'karma-typescript'],
         files: [
             '../src/*.ts',
             '../test/ts/*.ts'
@@ -9,7 +9,7 @@ module.exports = function(config) {
         exclude: [
         ],
         preprocessors: {
-            '../**/*.ts': ['typescript']
+            '../**/*.ts': ['karma-typescript']
         },
 
         typescriptPreprocessor: {
