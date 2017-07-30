@@ -12,4 +12,17 @@ class HorasCalc {
         let result = horaInicial.getMinutos() - horaFim.getMinutos();
         return result < 0 ? result * (-1) : result;
     }
+
+    public isWithinRange(rangeInicial : Horas, rangeFinal : Horas, hora : Horas) : boolean {
+        if (rangeFinal.getMinutos() > rangeInicial.getMinutos()){
+            return (hora.getMinutos() >= rangeInicial.getMinutos() && hora.getMinutos() <= rangeFinal.getMinutos());
+        } else {
+            return (hora.getMinutos() <= rangeFinal.getMinutos() && hora.getMinutos() <= rangeInicial.getMinutos()
+            || (hora.getMinutos() == rangeInicial.getMinutos() || hora.getMinutos() == rangeFinal.getMinutos()));
+        }
+    }
+
+    public somarHoras(hora1 : Horas, hora2 : Horas) : number {
+        return hora1.getMinutos() + hora2.getMinutos();
+    }
 }
